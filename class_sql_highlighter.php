@@ -27,7 +27,7 @@ class Highlighter {
     'PRIMARY', 'AUTO_INCREMENT', 'IDENTITY', 'VALUES'
     ),
   'joins' => array('JOIN', 'INNER', 'OUTER', 'FULL', 'NATURAL', 'LEFT', 'RIGHT'),
-  'chars' => '/([\\.,\\(\\)<>=]+)/i',
+  'chars' => '/([\\.,\\(\\)<>:=]+)/i',
   'functions' => array(
     'MIN', 'MAX', 'SUM', 'COUNT', 'AVG', 'CAST', 'COALESCE', 'CHAR_LENGTH', 'LENGTH', 'SUBSTRING',
     'DAY', 'MONTH', 'YEAR', 'DATE_FORMAT', 'CRC32', 'CURDATE', 'SYSDATE', 'NOW', 'GETDATE',
