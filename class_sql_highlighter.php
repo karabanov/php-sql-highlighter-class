@@ -29,10 +29,10 @@ class Highlighter {
   'joins' => array('JOIN', 'INNER', 'OUTER', 'FULL', 'NATURAL', 'LEFT', 'RIGHT'),
   'chars' => '/([\\.,\\(\\)<>=]+)/i',
   'functions' => array(
-    'MIN', 'MAX', 'AVG', 'COUNT', 'AVG', 'CAST', 'COALESCE', 'CHAR_LENGTH', 'LENGTH', 'SUBSTRING',
+    'MIN', 'MAX', 'SUM', 'COUNT', 'AVG', 'CAST', 'COALESCE', 'CHAR_LENGTH', 'LENGTH', 'SUBSTRING',
     'DAY', 'MONTH', 'YEAR', 'DATE_FORMAT', 'CRC32', 'CURDATE', 'SYSDATE', 'NOW', 'GETDATE',
     'FROM_UNIXTIME', 'FROM_DAYS', 'TO_DAYS', 'HOUR', 'IFNULL', 'ISNULL', 'NVL', 'NVL2',
-    'INET_ATON', 'INET_NTOA', 'INSTR',
+    'INET_ATON', 'INET_NTOA', 'INSTR', 'FOUND_ROWS',
     'LAST_INSERT_ID', 'LCASE', 'LOWER', 'UCASE', 'UPPER',
     'LPAD','RPAD','RTRIM','LTRIM',
     'MD5','MINUTE', 'ROUND',
