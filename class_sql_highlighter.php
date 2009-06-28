@@ -18,7 +18,7 @@ class Highlighter {
   'keywords' =>
     array('SELECT', 'UPDATE', 'INSERT', 'DELETE', 'REPLACE', 'INTO', 'CREATE', 'ALTER', 'TABLE', 'DROP', 'TRUNCATE', 'FROM',
     'ADD', 'CHANGE', 'COLUMN', 'KEY',
-    'WHERE', 'ON', 'CASE', 'WHEN', 'THEN', 'END', 'ELSE', 
+    'WHERE', 'ON', 'CASE', 'WHEN', 'THEN', 'END', 'ELSE', 'AS', 
     'USING', 'USE', 'INDEX', 'CONSTRAINT', 'REFERENCES', 'DUPLICATE',
     'LIMIT', 'OFFSET', 'SET', 'SHOW', 'STATUS', 
     'BETWEEN', 'AND', 'IS', 'NOT', 'OR', 'XOR', 'INTERVAL', 'TOP',
@@ -27,7 +27,7 @@ class Highlighter {
     'PRIMARY', 'AUTO_INCREMENT', 'DEFAULT', 'IDENTITY', 'VALUES'
     ),
   'joins' => array('JOIN', 'INNER', 'OUTER', 'FULL', 'NATURAL', 'LEFT', 'RIGHT'),
-  'chars' => '/([\\.,\\(\\)<>:=]+)/i',
+  'chars' => '/([\\.,\\(\\)<>:=`]+)/i',
   'functions' => array(
     'MIN', 'MAX', 'SUM', 'COUNT', 'AVG', 'CAST', 'COALESCE', 'CHAR_LENGTH', 'LENGTH', 'SUBSTRING',
     'DAY', 'MONTH', 'YEAR', 'DATE_FORMAT', 'CRC32', 'CURDATE', 'SYSDATE', 'NOW', 'GETDATE',
