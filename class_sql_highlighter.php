@@ -49,7 +49,7 @@ class Highlighter {
 
   public function highlight($sql)
   {
-    $i = 0;
+    $sql = str_replace('\\\'', '\\&#039;', $sql);
     foreach($this->colors as $key=>$color)
     {
       if (in_array($key, Array('constants', 'chars'))) {
