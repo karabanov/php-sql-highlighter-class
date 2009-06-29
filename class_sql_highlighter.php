@@ -24,7 +24,9 @@ class Highlighter {
     'BETWEEN', 'AND', 'IS', 'NOT', 'OR', 'XOR', 'INTERVAL', 'TOP',
     'GROUP BY', 'ORDER BY', 'DESC', 'ASC', 'COLLATE', 'NAMES', 'UTF8', 'DISTINCT', 'DATABASE',
     'CALC_FOUND_ROWS', 'SQL_NO_CACHE', 'MATCH', 'AGAINST', 'LIKE', 'REGEXP', 'RLIKE',
-    'PRIMARY', 'AUTO_INCREMENT', 'DEFAULT', 'IDENTITY', 'VALUES'
+    'PRIMARY', 'AUTO_INCREMENT', 'DEFAULT', 'IDENTITY', 'VALUES', 'PROCEDURE', 'FUNCTION', 
+	'TRAN', 'TRANSACTION', 'COMMIT', 'ROLLBACK', 'SAVEPOINT', 'TRIGGER', 'CASCADE',
+	'DECLARE', 'CURSOR', 'FOR', 'DEALLOCATE'
     ),
   'joins' => array('JOIN', 'INNER', 'OUTER', 'FULL', 'NATURAL', 'LEFT', 'RIGHT'),
   'chars' => '/([\\.,\\(\\)<>:=`]+)/i',
@@ -37,7 +39,7 @@ class Highlighter {
     'LPAD','RPAD','RTRIM','LTRIM',
     'MD5','MINUTE', 'ROUND',
     'SECOND', 'SHA1', 'STDDEV', 'STR_TO_DATE', 'WEEK'),
-    'constants' => '/(\'[^\']*\'|[0-9]+)/i'
+   'constants' => '/(\'[^\']*\'|[0-9]+)/i'
   );
 
   /* 
